@@ -38,7 +38,8 @@ Route::view('/nosotros', 'about')->name('about');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware('auth')->name('dashboard');
+//->middleware(['auth', 'verified'])->name('dashboard'); El verified en caso de querer verificar el correo
 
 Route::middleware(['auth', 'password.confirm'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
