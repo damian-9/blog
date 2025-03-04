@@ -45,7 +45,7 @@
           <div class="flex-1 space-y-3 p-5">
             {{-- <h3 class="text-sm font-semibold text-sky-500"> Desk and Office </h3> --}}
             <h2 class="text-xl font-semibold leading-tight text-slate-800 dark:text-slate-200" >
-              <a class="hover:underline" href="{{route('posts.show', $post)}}}">
+              <a class="hover:underline" href="{{route('posts.show', $post)}}">
                 {{$post->title}}
               </a>
             </h2>
