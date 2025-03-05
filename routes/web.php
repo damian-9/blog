@@ -36,9 +36,9 @@ Route::view('/nosotros', 'about')->name('about');
 
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth')->name('dashboard');
+ Route::get('/dashboard', function () {
+     return view('welcome');
+ })->middleware('auth')->name('dashboard');
 //->middleware(['auth', 'verified'])->name('dashboard'); El verified en caso de querer verificar el correo
 
 Route::middleware(['auth', 'password.confirm'])->group(function () {
